@@ -7,6 +7,8 @@ simplesmente não baterá mais rápido que esse máximo (220 - idade).
 Ao se exercitar para fortalecer seu coração, você deve manter sua
 frequência cardíaca entre 65% e 85% da frequência cardíaca máxima.
 """
-idade = input(int('Por favor, digite sua idade: 23 '))
+idade = int(input('Por favor, digite sua idade: '))
 frequencia = 220 - idade
-print(f'Ao se exercitar para fortalecer o coração, você deve manter sua frequência cardíaca entre 128 e 167 batimentos por minuto.')
+percent_frequ_min = (frequencia * 65) /100
+percent_frequ_max = (frequencia * 85) /100
+print(f'Ao se exercitar para fortalecer o coração, você deve manter sua frequência cardíaca entre {percent_frequ_min} e {percent_frequ_max} batimentos por minuto.')
